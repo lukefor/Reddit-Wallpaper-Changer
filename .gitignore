@@ -47,3 +47,8 @@ Temporary Items
 .apdisk
 /Reddit Wallpaper Changer/bin/Debug/Super Debug
 /Reddit Wallpaper Changer/bin
+/.vs/Reddit Wallpaper Changer/v15/Server/sqlite3
+/.vs/Reddit-Wallpaper-Changer/v15
+/UpgradeLog.htm
+*.cache
+/Reddit Wallpaper Changer/obj/Debug/Reddit Wallpaper Changer.csproj.CopyComplete

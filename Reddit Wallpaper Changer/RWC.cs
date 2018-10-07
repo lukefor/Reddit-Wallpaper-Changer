@@ -1423,6 +1423,17 @@ namespace Reddit_Wallpaper_Changer
         }
 
         //======================================================================
+        // Get next wallpaper
+        //======================================================================
+        private void taskIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(!chkTrayClick.Checked)
+            {
+                this.changeWallpaper();
+            }
+        }
+
+        //======================================================================
         // Settings selected from the menu
         //======================================================================
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2853,6 +2864,8 @@ namespace Reddit_Wallpaper_Changer
                 Logging.LogMessageToFile("Error rebuilding thumbnail cache: " + ex.Message, 1);
             }
         }
+
+
     }
 }
 
