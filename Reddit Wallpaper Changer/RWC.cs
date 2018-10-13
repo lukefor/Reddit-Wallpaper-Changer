@@ -1940,6 +1940,14 @@ namespace Reddit_Wallpaper_Changer
         }
 
         //======================================================================
+        // Open The_Bic_Pen profile page on Reddit
+        //======================================================================
+        private void bicLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        //======================================================================
         // Set default location for manually saved wallpapers
         //======================================================================
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -2376,7 +2384,7 @@ namespace Reddit_Wallpaper_Changer
         //======================================================================
         private void btnBug_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Rawns/Reddit-Wallpaper-Changer/issues/new");
+            System.Diagnostics.Process.Start("https://github.com/TheBicPen/Reddit-Wallpaper-Changer/issues/new");
         }
 
         //======================================================================
@@ -2400,7 +2408,7 @@ namespace Reddit_Wallpaper_Changer
         //======================================================================
         private void btnDonate_Click(object sender, EventArgs e)
         {    
-            System.Diagnostics.Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S9YSLJS5DXDT8");
+            System.Diagnostics.Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YHWGL5WGMMS94");
         }
 
         //======================================================================
@@ -2652,6 +2660,7 @@ namespace Reddit_Wallpaper_Changer
 
             }
         }
+
 
         //======================================================================
         // Delete all favourite wallpapers from the database 

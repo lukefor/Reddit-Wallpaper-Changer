@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RWC));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.configurePanel = new System.Windows.Forms.Panel();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.statusMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +47,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabSettingsControl = new System.Windows.Forms.TabControl();
             this.tabSettings = new System.Windows.Forms.TabPage();
+            this.chkTrayClick = new System.Windows.Forms.CheckBox();
             this.chkUpdates = new System.Windows.Forms.CheckBox();
             this.chkWallpaperInfoPopup = new System.Windows.Forms.CheckBox();
             this.chkSuppressDuplicates = new System.Windows.Forms.CheckBox();
@@ -103,6 +104,8 @@
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnDonate = new System.Windows.Forms.Button();
             this.btnBug = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -170,7 +173,6 @@
             this.saveThisWallpaperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rwcStatusStrip = new System.Windows.Forms.StatusStrip();
             this.statuslabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.chkTrayClick = new System.Windows.Forms.CheckBox();
             this.configurePanel.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
             this.tabSettingsControl.SuspendLayout();
@@ -329,7 +331,7 @@
             this.tabSettingsControl.Name = "tabSettingsControl";
             this.tabSettingsControl.SelectedIndex = 0;
             this.tabSettingsControl.Size = new System.Drawing.Size(428, 158);
-            this.tabSettingsControl.TabIndex = 14;
+            this.tabSettingsControl.TabIndex = 13;
             // 
             // tabSettings
             // 
@@ -352,13 +354,23 @@
             this.tabSettings.TabIndex = 0;
             this.tabSettings.Text = "RWC Settings:";
             // 
+            // chkTrayClick
+            // 
+            this.chkTrayClick.AutoSize = true;
+            this.chkTrayClick.Location = new System.Drawing.Point(20, 132);
+            this.chkTrayClick.Name = "chkTrayClick";
+            this.chkTrayClick.Size = new System.Drawing.Size(143, 17);
+            this.chkTrayClick.TabIndex = 8;
+            this.chkTrayClick.Text = "Disable Tray Icon Click?";
+            this.chkTrayClick.UseVisualStyleBackColor = true;
+            // 
             // chkUpdates
             // 
             this.chkUpdates.AutoSize = true;
             this.chkUpdates.Location = new System.Drawing.Point(246, 102);
             this.chkUpdates.Name = "chkUpdates";
             this.chkUpdates.Size = new System.Drawing.Size(131, 17);
-            this.chkUpdates.TabIndex = 19;
+            this.chkUpdates.TabIndex = 7;
             this.chkUpdates.Text = "Auto Update Check?";
             this.chkUpdates.UseVisualStyleBackColor = true;
             // 
@@ -368,7 +380,7 @@
             this.chkWallpaperInfoPopup.Location = new System.Drawing.Point(246, 73);
             this.chkWallpaperInfoPopup.Name = "chkWallpaperInfoPopup";
             this.chkWallpaperInfoPopup.Size = new System.Drawing.Size(145, 17);
-            this.chkWallpaperInfoPopup.TabIndex = 18;
+            this.chkWallpaperInfoPopup.TabIndex = 5;
             this.chkWallpaperInfoPopup.Text = "Wallpaper Info Popup?";
             this.chkWallpaperInfoPopup.UseVisualStyleBackColor = true;
             // 
@@ -378,7 +390,7 @@
             this.chkSuppressDuplicates.Location = new System.Drawing.Point(20, 72);
             this.chkSuppressDuplicates.Name = "chkSuppressDuplicates";
             this.chkSuppressDuplicates.Size = new System.Drawing.Size(135, 17);
-            this.chkSuppressDuplicates.TabIndex = 17;
+            this.chkSuppressDuplicates.TabIndex = 4;
             this.chkSuppressDuplicates.Text = "Suppress Duplicates?";
             this.chkSuppressDuplicates.UseVisualStyleBackColor = true;
             // 
@@ -388,7 +400,7 @@
             this.chkFitWallpaper.Location = new System.Drawing.Point(246, 14);
             this.chkFitWallpaper.Name = "chkFitWallpaper";
             this.chkFitWallpaper.Size = new System.Drawing.Size(153, 17);
-            this.chkFitWallpaper.TabIndex = 16;
+            this.chkFitWallpaper.TabIndex = 1;
             this.chkFitWallpaper.Text = "Validate wallpaper sizes?";
             this.chkFitWallpaper.UseVisualStyleBackColor = true;
             // 
@@ -398,7 +410,7 @@
             this.chkNotifications.Location = new System.Drawing.Point(20, 102);
             this.chkNotifications.Name = "chkNotifications";
             this.chkNotifications.Size = new System.Drawing.Size(138, 17);
-            this.chkNotifications.TabIndex = 14;
+            this.chkNotifications.TabIndex = 6;
             this.chkNotifications.Text = "Disable Notifications?";
             this.chkNotifications.UseVisualStyleBackColor = true;
             // 
@@ -408,7 +420,7 @@
             this.chkFade.Location = new System.Drawing.Point(246, 43);
             this.chkFade.Name = "chkFade";
             this.chkFade.Size = new System.Drawing.Size(144, 17);
-            this.chkFade.TabIndex = 13;
+            this.chkFade.TabIndex = 3;
             this.chkFade.Text = "Wallpaper Fade Effect?";
             this.chkFade.UseVisualStyleBackColor = true;
             // 
@@ -418,7 +430,7 @@
             this.chkAutoStart.Location = new System.Drawing.Point(20, 13);
             this.chkAutoStart.Name = "chkAutoStart";
             this.chkAutoStart.Size = new System.Drawing.Size(83, 17);
-            this.chkAutoStart.TabIndex = 12;
+            this.chkAutoStart.TabIndex = 0;
             this.chkAutoStart.Text = "Auto Start?";
             this.chkAutoStart.UseVisualStyleBackColor = true;
             // 
@@ -428,7 +440,7 @@
             this.chkStartInTray.Location = new System.Drawing.Point(20, 42);
             this.chkStartInTray.Name = "chkStartInTray";
             this.chkStartInTray.Size = new System.Drawing.Size(90, 17);
-            this.chkStartInTray.TabIndex = 11;
+            this.chkStartInTray.TabIndex = 2;
             this.chkStartInTray.Text = "Start In Tray?";
             this.chkStartInTray.UseVisualStyleBackColor = true;
             // 
@@ -688,7 +700,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btnSave.Size = new System.Drawing.Size(75, 25);
-            this.btnSave.TabIndex = 2;
+            this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSave.UseVisualStyleBackColor = true;
@@ -717,7 +729,7 @@
             this.label9.Location = new System.Drawing.Point(18, 20);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(273, 13);
-            this.label9.TabIndex = 13;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Truly Random does not require a search query.";
             this.label9.Visible = false;
             // 
@@ -729,7 +741,7 @@
             this.btnWizard.Location = new System.Drawing.Point(381, 29);
             this.btnWizard.Name = "btnWizard";
             this.btnWizard.Size = new System.Drawing.Size(32, 32);
-            this.btnWizard.TabIndex = 9;
+            this.btnWizard.TabIndex = 3;
             this.btnWizard.UseVisualStyleBackColor = true;
             this.btnWizard.Click += new System.EventHandler(this.searchWizardButton_Click);
             // 
@@ -749,7 +761,7 @@
             0});
             this.changeTimeValue.Name = "changeTimeValue";
             this.changeTimeValue.Size = new System.Drawing.Size(58, 22);
-            this.changeTimeValue.TabIndex = 8;
+            this.changeTimeValue.TabIndex = 1;
             this.changeTimeValue.Value = new decimal(new int[] {
             1,
             0,
@@ -762,7 +774,7 @@
             this.label6.Location = new System.Drawing.Point(18, 53);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 13);
-            this.label6.TabIndex = 7;
+            this.label6.TabIndex = 1;
             this.label6.Text = "ChangeWallpaper Every:";
             // 
             // searchQuery
@@ -770,7 +782,7 @@
             this.searchQuery.Location = new System.Drawing.Point(133, 17);
             this.searchQuery.Name = "searchQuery";
             this.searchQuery.Size = new System.Drawing.Size(231, 22);
-            this.searchQuery.TabIndex = 3;
+            this.searchQuery.TabIndex = 0;
             this.searchQuery.TextChanged += new System.EventHandler(this.searchQuery_TextChanged);
             // 
             // changeTimeType
@@ -784,7 +796,7 @@
             this.changeTimeType.Location = new System.Drawing.Point(250, 50);
             this.changeTimeType.Name = "changeTimeType";
             this.changeTimeType.Size = new System.Drawing.Size(114, 21);
-            this.changeTimeType.TabIndex = 6;
+            this.changeTimeType.TabIndex = 2;
             this.changeTimeType.SelectedIndexChanged += new System.EventHandler(this.changeTimeType_SelectedIndexChanged);
             // 
             // label2
@@ -816,7 +828,7 @@
             this.subredditTextBox.Location = new System.Drawing.Point(133, 19);
             this.subredditTextBox.Name = "subredditTextBox";
             this.subredditTextBox.Size = new System.Drawing.Size(280, 20);
-            this.subredditTextBox.TabIndex = 5;
+            this.subredditTextBox.TabIndex = 7;
             this.subredditTextBox.Text = "wallpapers+wallpaper";
             this.subredditTextBox.TextChanged += new System.EventHandler(this.subredditTextBox_TextChanged);
             // 
@@ -826,7 +838,7 @@
             this.label1.Location = new System.Drawing.Point(18, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 8;
             this.label1.Text = "Grab Wallpaper By:";
             // 
             // label5
@@ -835,7 +847,7 @@
             this.label5.Location = new System.Drawing.Point(18, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 13);
-            this.label5.TabIndex = 4;
+            this.label5.TabIndex = 7;
             this.label5.Text = "Subreddit(s):";
             // 
             // wallpaperGrabType
@@ -856,7 +868,7 @@
             this.wallpaperGrabType.Location = new System.Drawing.Point(133, 45);
             this.wallpaperGrabType.Name = "wallpaperGrabType";
             this.wallpaperGrabType.Size = new System.Drawing.Size(156, 21);
-            this.wallpaperGrabType.TabIndex = 0;
+            this.wallpaperGrabType.TabIndex = 8;
             this.wallpaperGrabType.SelectedIndexChanged += new System.EventHandler(this.wallpaperGrabType_SelectedIndexChanged);
             // 
             // statuslabel
@@ -1008,6 +1020,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.linkLabel1);
+            this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.btnDonate);
             this.groupBox4.Controls.Add(this.btnBug);
             this.groupBox4.Controls.Add(this.label10);
@@ -1021,6 +1035,33 @@
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "About Reddit Wallpaper Changer...";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.SteelBlue;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.SteelBlue;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.SteelBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(173, 24);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(102, 13);
+            this.linkLabel1.TabIndex = 12;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "/u/The_Bic_Pen";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.SteelBlue;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.bicLink_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Currently Maintained By:";
             // 
             // btnDonate
             // 
@@ -1055,11 +1096,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(30, 42);
+            this.label10.Location = new System.Drawing.Point(22, 54);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 13);
+            this.label10.Size = new System.Drawing.Size(142, 13);
             this.label10.TabIndex = 8;
-            this.label10.Text = "Maintained By:";
+            this.label10.Text = "Formerly Maintained By:";
             // 
             // rawnsLink
             // 
@@ -1069,7 +1110,7 @@
             this.rawnsLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rawnsLink.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.rawnsLink.LinkColor = System.Drawing.Color.SteelBlue;
-            this.rawnsLink.Location = new System.Drawing.Point(166, 42);
+            this.rawnsLink.Location = new System.Drawing.Point(173, 54);
             this.rawnsLink.Name = "rawnsLink";
             this.rawnsLink.Size = new System.Drawing.Size(64, 13);
             this.rawnsLink.TabIndex = 7;
@@ -1096,7 +1137,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 66);
+            this.label3.Location = new System.Drawing.Point(22, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 13);
             this.label3.TabIndex = 3;
@@ -1110,7 +1151,7 @@
             this.redditLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redditLink.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.redditLink.LinkColor = System.Drawing.Color.SteelBlue;
-            this.redditLink.Location = new System.Drawing.Point(166, 66);
+            this.redditLink.Location = new System.Drawing.Point(173, 84);
             this.redditLink.Name = "redditLink";
             this.redditLink.Size = new System.Drawing.Size(59, 13);
             this.redditLink.TabIndex = 2;
@@ -1298,8 +1339,8 @@
             // Thread
             // 
             this.Thread.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Thread.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Thread.DefaultCellStyle = dataGridViewCellStyle1;
             this.Thread.HeaderText = "Thread";
             this.Thread.Name = "Thread";
             this.Thread.ReadOnly = true;
@@ -1373,7 +1414,7 @@
             this.configureButton.Location = new System.Drawing.Point(0, 0);
             this.configureButton.Name = "configureButton";
             this.configureButton.Size = new System.Drawing.Size(75, 66);
-            this.configureButton.TabIndex = 4;
+            this.configureButton.TabIndex = 0;
             this.configureButton.Text = "Settings";
             this.configureButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.configureButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -1409,7 +1450,7 @@
             this.historyButton.Location = new System.Drawing.Point(150, 0);
             this.historyButton.Name = "historyButton";
             this.historyButton.Size = new System.Drawing.Size(75, 66);
-            this.historyButton.TabIndex = 6;
+            this.historyButton.TabIndex = 2;
             this.historyButton.Text = "History";
             this.historyButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.historyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -1432,7 +1473,7 @@
             this.monitorButton.Location = new System.Drawing.Point(75, 0);
             this.monitorButton.Name = "monitorButton";
             this.monitorButton.Size = new System.Drawing.Size(75, 66);
-            this.monitorButton.TabIndex = 7;
+            this.monitorButton.TabIndex = 1;
             this.monitorButton.Text = "Monitor(s)";
             this.monitorButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.monitorButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -1559,8 +1600,8 @@
             // blacklistThread
             // 
             this.blacklistThread.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.blacklistThread.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.blacklistThread.DefaultCellStyle = dataGridViewCellStyle2;
             this.blacklistThread.HeaderText = "Thread";
             this.blacklistThread.Name = "blacklistThread";
             this.blacklistThread.ReadOnly = true;
@@ -1597,7 +1638,7 @@
             this.blacklistButton.Location = new System.Drawing.Point(300, 0);
             this.blacklistButton.Name = "blacklistButton";
             this.blacklistButton.Size = new System.Drawing.Size(75, 66);
-            this.blacklistButton.TabIndex = 3;
+            this.blacklistButton.TabIndex = 4;
             this.blacklistButton.Text = "Blacklist";
             this.blacklistButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.blacklistButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -1632,7 +1673,7 @@
             this.favouritesButton.Location = new System.Drawing.Point(225, 0);
             this.favouritesButton.Name = "favouritesButton";
             this.favouritesButton.Size = new System.Drawing.Size(75, 66);
-            this.favouritesButton.TabIndex = 9;
+            this.favouritesButton.TabIndex = 3;
             this.favouritesButton.Text = "Favourites";
             this.favouritesButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.favouritesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -1703,8 +1744,8 @@
             // favouriteThread
             // 
             this.favouriteThread.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.favouriteThread.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.favouriteThread.DefaultCellStyle = dataGridViewCellStyle3;
             this.favouriteThread.HeaderText = "Thread";
             this.favouriteThread.Name = "favouriteThread";
             this.favouriteThread.ReadOnly = true;
@@ -1783,16 +1824,6 @@
             this.statuslabel1.Name = "statuslabel1";
             this.statuslabel1.Size = new System.Drawing.Size(100, 17);
             this.statuslabel1.Text = "RWC Status Text";
-            // 
-            // chkTrayClick
-            // 
-            this.chkTrayClick.AutoSize = true;
-            this.chkTrayClick.Location = new System.Drawing.Point(20, 132);
-            this.chkTrayClick.Name = "chkTrayClick";
-            this.chkTrayClick.Size = new System.Drawing.Size(143, 17);
-            this.chkTrayClick.TabIndex = 20;
-            this.chkTrayClick.Text = "Disable Tray Icon Click?";
-            this.chkTrayClick.UseVisualStyleBackColor = true;
             // 
             // RWC
             // 
@@ -2011,6 +2042,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn blacklistThreadLink;
         private System.Windows.Forms.DataGridViewTextBoxColumn blacklistDateTime;
         private System.Windows.Forms.CheckBox chkTrayClick;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
