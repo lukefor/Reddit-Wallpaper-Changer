@@ -1177,16 +1177,13 @@ namespace Reddit_Wallpaper_Changer
 
                                 if (Properties.Settings.Default.fitWallpaper == true)
                                 {
-                                    string screenWidth = SystemInformation.VirtualScreen.Width.ToString();
-                                    string screenHeight = SystemInformation.VirtualScreen.Height.ToString();
-
                                     var img = Bitmap.FromFile(wallpaperFile);
                                     string wallpaperWidth = img.Width.ToString();
                                     string wallpaperHeight = img.Height.ToString();
 
-                                    if (!screenWidth.Equals(wallpaperWidth) || !screenHeight.Equals(wallpaperHeight))
+                                    if (img.Width < 1920 || img.Height < 1080)
                                     {
-                                        Logging.LogMessageToFile("Wallpaper size mismatch. Screen: " + screenWidth + "x" + screenHeight + ", Wallpaper: " + wallpaperWidth + "x" + wallpaperHeight, 1);
+                                        Logging.LogMessageToFile("Wallpaper size too small. Wallpaper: " + wallpaperWidth + "x" + wallpaperHeight, 1);
                                         updateStatus("Wallpaper resolution mismatch.");
                                         ++noResultCount;
                                         restartTimer(breakBetweenChange);
